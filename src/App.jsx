@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <div className="main">
-      <NavBar />
-          <ItemListContainer saludar='Bienvenido/a a la tienda de arte digital :)' />
+        <NavBar />
+        <ItemListContainer saludar='Bienvenido/a a la tienda de arte digital :)' />
       </div> 
     </>
   );

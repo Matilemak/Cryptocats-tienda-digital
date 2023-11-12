@@ -13,8 +13,8 @@ function NavBar() {
                 </a>
                 <Navbar.Brand href="#home"></Navbar.Brand>
                 <Nav className="nav-links">
-                    <Nav.Link href="#Productos">Productos</Nav.Link>
-                    <Nav.Link href="#Nosotros">Nosotros</Nav.Link>
+                    <Nav.Link href="#productos">Productos</Nav.Link>
+                    <Nav.Link href="#nosotros">Nosotros</Nav.Link>
                     <Nav.Link href="#contacto">Contacto</Nav.Link>
                     <Nav.Link href="#carrito"> <CartWidget /> </Nav.Link>
                 </Nav>
