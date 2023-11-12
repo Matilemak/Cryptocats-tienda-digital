@@ -8,9 +8,9 @@ function App() {
       <div className="main">
       <NavBar />
           <ItemListContainer saludar='Bienvenido/a a la tienda de arte digital :)' />
-      </div>
+      </div> 
     </>
-  )
-}
+  );
+};
 
 export default App
