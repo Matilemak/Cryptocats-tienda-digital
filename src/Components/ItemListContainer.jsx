@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import ItemList from './itemList'
 
-const ItemListContainer = ({saludar}) => {
+const ItemListContainer = () => {
+
+    const [list, setList] = useState ([])
+    const url = '#'
+    useEffect(() => {
+        fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            setList(data)
+        })
+    }, [])
+
     return (
         <div>
-            <h2 className='saludar'>{saludar}</h2>
+            <ItemList list={list} />
         </div>
-    );
-};
+    )
+}
 
 export default ItemListContainer
