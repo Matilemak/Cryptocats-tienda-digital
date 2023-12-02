@@ -1,21 +1,34 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import jsonProductos from './jsonProductos.json'
 import ItemList from './itemList'
 
 const ItemListContainer = () => {
 
-    const [list, setList] = useState ([])
-    const url = '#'
+    const [item, setItem] = useState ([])
+    const {id} = useParams();
+
     useEffect(() => {
-        fetch(url)
-        .then((res) => res.json())
-        .then((data) => {
-            setList(data)
-        })
-    }, [])
+        const fetchData = async() => {
+            try{
+                const data = await new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve( id ? jsonProductos.filter(item => item.categoria === id) : jsonProductos)
+                    }, 2000);
+                });
+                setItem(data);
+            }catch(error){
+                console.log('Error: ', error);
+            }
+        };
+        fetchData();
+    }, [id])
 
     return (
-        <div>
-            <ItemList list={list} />
+        <div className='container'>
+            <div className='row'>
+                <ItemList item={item} />
+            </div>
         </div>
     )
 }

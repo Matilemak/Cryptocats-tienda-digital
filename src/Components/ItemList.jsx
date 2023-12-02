@@ -1,16 +1,16 @@
 import React from 'react'
 import Card from './Card'
 
-    const ItemList = ({list}) => {
-
-        const listMap = list.map((cryptocat) => {
-            const {name, id, image} = cryptocat;
-            return <Card cryptocat={cryptocat} key={cryptocat.id} />;
-        });
+    const ItemList = ({item}) => {
 
     return (
-        <div>
-            {listMap}
+        <div className='row'>
+            {item.map(item => 
+                <div className='col-md-3' key={item.id}>
+                    <Card item={Card} />
+
+                </div>
+                )}
         </div>
     )
 };

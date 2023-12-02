@@ -1,11 +1,14 @@
 import NavBar from './Components/NavBar';
+import CartWidget from './Components/CartWidget';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemListContainer from './Components/ItemListContainer';
 import './App.css';
-import Productos from './Components/Productos';
-import Nosotros from './Components/Nosotros';
-import Contacto from './Components/Contacto';
-
+import Personajes from './Components/Personajes';
+import PersonajesId from './Components/PersonajesId';
+import Estructuras from './Components/Estructuras';
+import Mapas from './Components/Mapas';
+import Error from './Components/Error';
+import ItemDetailContainer from './Components/ItemDetailContainer';
 
 function App() {
   return (
@@ -14,10 +17,16 @@ function App() {
         <BrowserRouter>
         <NavBar />
           <Routes>
-            <Route path='/' element=    {<ItemListContainer />} />
-            <Route path='/' element={ <Productos />} />
-            <Route path='/' element={ <Nosotros />} />
-            <Route path='/' element={ <Contacto />} />
+            <Route path={'/'} element={<ItemListContainer />} />
+            <Route path={'/categoria/:id'} element={<ItemListContainer />} />
+            <Route path={'/item/:id'} element={<ItemDetailContainer />} />
+            <Route path={'/PersonajesId/:id/:name'} element={ <PersonajesId />} />
+            <Route path={'/Personajes'} element={ <Personajes />} />
+            <Route path={'/Estructuras'} element={ <Estructuras />} />
+            <Route path={'/Mapas'} element={ <Mapas />} />
+            <Route pat={'/CartWidget'} element={ <CartWidget /> } />
+            <Route pat={'*'} element={ <Error /> } />
+
           </Routes>
 
         {/* <Footer /> */}

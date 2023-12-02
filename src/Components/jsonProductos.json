@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cryptocat 02",
+        "imagen": "./src/asstes/img/gato-02.png",
+        "precio": 1000,
+        "categoria": "Personajes"
+    },
+    {
+        "id": 2,
+        "nombre": "Cryptocat 08",
+        "imagen": "./src/assets/img/gato-08.png",
+        "precio": 1000,
+        "categoria": "Personajes"
+    },
+    {
+        "id": 3,
+        "nombre": "Cryptocat 00",
+        "imagen": "#",
+        "precio": 1000,
+        "categoria": "Personajes"
+    },
+    {
+        "id": 4,
+        "nombre": "Cryptocat 00",
+        "imagen": "#",
+        "precio": 1000,
+        "categoria": "Personajes"
+    },
+    {
+        "id": 5,
+        "nombre": "Cryptocat 00",
+        "imagen": "#",
+        "precio": 1000,
+        "categoria": "Personajes"
+    },
+    {
+        "id": 6,
+        "nombre": "Cryptocat 00",
+        "imagen": "#",
+        "precio": 1000,
+        "categoria": "Personajes"
+    },
+    {
+        "id": 7,
+        "nombre": "Cryptocat 00",
+        "imagen": "#",
+        "precio": 1000,
+        "categoria": "Personajes"
+    },
+    {
+        "id": 8,
+        "nombre": "Cryptocat 00",
+        "imagen": "#",
+        "precio": 1000,
+        "categoria": "Personajes"
+    }
+]

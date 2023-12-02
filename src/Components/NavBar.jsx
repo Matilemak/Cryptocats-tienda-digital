@@ -10,12 +10,12 @@ function NavBar() {
     <div className="navbar">
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand to='/'> <Logo/> </Navbar.Brand>
+                <Link className='logocc' to='/'> <Logo /> </Link>
                 <Nav className="nav-links">
-                    <Link to="/">Productos</Link>
-                    <Link to="/">Nosotros</Link>
-                    <Link to="/">Contacto</Link>
-                    <Link to="/"> <CartWidget /> </Link>
+                    <Link to="/Personajes">Personajes</Link>
+                    <Link to="/Estructuras">Estructuras</Link>
+                    <Link to="/Mapas">Mapas</Link>
+                    <Link to="/CartWidget"> <CartWidget /> </Link>
                 </Nav>
             </Container>
         </Navbar>

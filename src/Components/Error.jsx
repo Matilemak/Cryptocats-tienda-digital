@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Contacto = () => {
+const Error = () => {
     return (
         <div>
-            <h3>Contacto</h3>
+            <h3> Error </h3>
         </div>
     )
 }
 
-export default Contacto
+export default Error
