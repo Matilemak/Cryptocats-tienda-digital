@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './Card'
+import Item from './Item'
 
     const ItemList = ({item}) => {
 
@@ -7,8 +7,7 @@ import Card from './Card'
         <div className='row'>
             {item.map(item => 
                 <div className='col-md-3' key={item.id}>
-                    <Card item={Card} />
-
+                    <Item item={Item} />
                 </div>
                 )}
         </div>

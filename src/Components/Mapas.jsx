@@ -3,7 +3,7 @@ import React from 'react'
 const Mapas = () => {
     return (
         <div>
-            <h3>Mapas</h3>
+            <h3 className='titulo-categoria'>Mapas</h3>
         </div>
     )
 }

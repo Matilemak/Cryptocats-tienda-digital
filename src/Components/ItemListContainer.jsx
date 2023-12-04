@@ -5,7 +5,7 @@ import ItemList from './itemList'
 
 const ItemListContainer = () => {
 
-    const [item, setItem] = useState ([])
+    const [item, setItem] = useState ([]);
     const {id} = useParams();
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const ItemListContainer = () => {
                 const data = await new Promise((resolve) => {
                     setTimeout(() => {
                         resolve( id ? jsonProductos.filter(item => item.categoria === id) : jsonProductos)
-                    }, 2000);
+                    }, 1000);
                 });
                 setItem(data);
             }catch(error){
@@ -26,7 +26,7 @@ const ItemListContainer = () => {
 
     return (
         <div className='container'>
-            <div className='row'>
+            <div>
                 <ItemList item={item} />
             </div>
         </div>

@@ -10,7 +10,7 @@ function NavBar() {
     <div className="navbar">
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-                <Link className='logocc' to='/'> <Logo /> </Link>
+                <Link className='logocc' to='/'><Logo /> </Link>
                 <Nav className="nav-links">
                     <Link to="/Personajes">Personajes</Link>
                     <Link to="/Estructuras">Estructuras</Link>
