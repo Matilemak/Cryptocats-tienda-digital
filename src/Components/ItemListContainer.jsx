@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import jsonProductos from './jsonProductos.json';
-import ItemList from './itemList';
+import jsonjsonProductos from './jsonProductos.json';
+import ItemList from './ItemList';
 
 const ItemListContainer = () => {
 
@@ -13,7 +13,7 @@ const ItemListContainer = () => {
             try{
                 const data = await new Promise((resolve) => {
                     setTimeout(() => {
-                        resolve( id ? jsonProductos.filter(item => item.categoria === id) : jsonProductos)
+                        resolve( id ? jsonjsonProductos.filter(item => item.categoria === id) : jsonjsonProductos)
                     }, 1000);
                 });
                 setItem(data);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Productos = ({id, imagen, nombre, precio}) => {
+const jsonProductos = ({id, imagen, nombre, precio}) => {
     return (
         <div>
             <img src={imagen} alt={nombre} />
@@ -12,4 +12,4 @@ const Productos = ({id, imagen, nombre, precio}) => {
     )
 }
 
-export default Productos;
+export default jsonProductos;

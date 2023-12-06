@@ -9,7 +9,6 @@ import Estructuras from './Components/Estructuras';
 import Mapas from './Components/Mapas';
 import Error from './Components/Error';
 import ItemDetailContainer from './Components/ItemDetailContainer';
-import jsonProductos from './Components/jsonProductos.json';
 
 function App() {
   
@@ -38,5 +37,5 @@ function App() {
     </>
   );
 };
-console.log("Datos de productos:", jsonProductos);
+
 export default App

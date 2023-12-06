@@ -2,8 +2,6 @@ import React from 'react';
 
 const ItemDetail = ({item}) => {
 
-    const { imagen, nombre, precio } = item || {};
-
     return (
         <div className='row'>
             <div className='col-md-4'>
