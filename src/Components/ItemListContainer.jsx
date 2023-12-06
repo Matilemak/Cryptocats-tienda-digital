@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import jsonProductos from './jsonProductos.json'
-import ItemList from './itemList'
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import jsonProductos from './jsonProductos.json';
+import ItemList from './itemList';
 
 const ItemListContainer = () => {
 
@@ -26,7 +26,7 @@ const ItemListContainer = () => {
 
     return (
         <div className='container'>
-            <div>
+            <div className='row'>
                 <ItemList item={item} />
             </div>
         </div>
