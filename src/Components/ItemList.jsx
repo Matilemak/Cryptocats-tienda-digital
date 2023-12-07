@@ -1,15 +1,15 @@
-import React from 'react'
-import Item from './Item';
+import React from 'react';
+import Items from './Items';
 
-    const ItemList = ({item}) => {
+    const ItemList = ({items}) => {
 
     return (
         <div className='row'>
-            {item.map((item) => 
+            {items.map((item) => (
                 <div className='col-md-3' key={item.id}>
-                    <Item item={Item} />
+                    <Items item={item} />
                 </div>
-                )}
+                ))}
         </div>
     );
 }

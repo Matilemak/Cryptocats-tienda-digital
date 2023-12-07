@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import jsonjsonProductos from './jsonProductos.json';
+import jsonProductos from './jsonProductos.json';
 import ItemList from './ItemList';
 
 const ItemListContainer = () => {
 
-    const [item, setItem] = useState ([]);
+    const [items, setItem] = useState ([]);
     const {id} = useParams();
 
     useEffect(() => {
@@ -13,7 +13,7 @@ const ItemListContainer = () => {
             try{
                 const data = await new Promise((resolve) => {
                     setTimeout(() => {
-                        resolve( id ? jsonjsonProductos.filter(item => item.categoria === id) : jsonjsonProductos)
+                        resolve( id ? jsonProductos.filter(item => item.categoria === id) : jsonProductos)
                     }, 1000);
                 });
                 setItem(data);
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
     return (
         <div className='container'>
             <div className='row'>
-                <ItemList item={item} />
+                <ItemList items={items} />
             </div>
         </div>
     )

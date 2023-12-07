@@ -20,15 +20,15 @@ function App() {
 
           <Routes>
 
-            <Route path={'/'} element={<ItemListContainer />} />
-            <Route path={'/categoria/:id'} element={<ItemListContainer />} />
-            <Route path={'/item/:id'} element={<ItemDetailContainer />} />
-            <Route path={'/PersonajesId/:id/:name'} element={ <PersonajesId />} />
-            <Route path={'/Personajes'} element={ <Personajes />} />
-            <Route path={'/Estructuras'} element={ <Estructuras />} />
-            <Route path={'/Mapas'} element={ <Mapas />} />
-            <Route pat={'/CartWidget'} element={ <CartWidget /> } />
-            <Route pat={'*'} element={ <Error /> } />
+            <Route path={'/'} element={ <ItemListContainer /> } />
+            <Route path={'/categoria/:id'} element={ <ItemListContainer /> } />
+            <Route path={'/item/:id'} element={ <ItemDetailContainer /> } />
+            <Route path={'/PersonajesId/:id/:name'} element={ <PersonajesId /> } />
+            <Route path={'/Personajes'} element={ <Personajes /> } />
+            <Route path={'/Estructuras'} element={ <Estructuras /> } />
+            <Route path={'/Mapas'} element={ <Mapas /> } />
+            <Route path={'/CartWidget'} element={ <CartWidget /> } />
+            <Route path={'*'} element={ <Error /> } />
 
           </Routes>
 

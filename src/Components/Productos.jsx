@@ -7,7 +7,7 @@ const jsonProductos = ({id, imagen, nombre, precio}) => {
             <p>{id}</p>
             <h3>{nombre}</h3>
             <p>{precio}</p>
-            <button onClick={() => setContador(contador+1)}>Agregar al carrito</button>
+            <button onClick={() => setContador(Contador+1)}>Agregar al carrito</button>
         </div>
     )
 }
