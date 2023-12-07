@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import jsonProductos from './jsonProductos.json';
 import ItemDetail from './ItemDetail';
@@ -11,19 +10,19 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         const promesa = new Promise((resolve) => {
             setTimeout(() => {
-                const foundItem = jsonProductos.find((item) => item.id === parseInt(id));
+                const foundItem = jsonProductos.find((item) => item.id === id);
                 resolve(foundItem);
             }, 1000)
         });
         promesa.then((data) => {
             setItem(data);
-        });
+        }); 
     }, [id]);
 
     return (
-        <div className='container'>
-            <div className='row'>
-            <ItemDetail item={item} />
+        <div className='item-detail-container'>
+            <div className='item-detail-body'>
+                <ItemDetail item={item} />
             </div>
         </div>
     );

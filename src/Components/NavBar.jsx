@@ -10,11 +10,11 @@ function NavBar() {
     <div className="navbar">
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-                <Link className='logocc' to='/'><Logo /> </Link>
+                <Link className='logocc' to='/'> <Logo /> </Link>
                 <Nav className="nav-links">
-                    <Link to="/Personajes">Personajes</Link>
-                    <Link to="/Estructuras">Estructuras</Link>
-                    <Link to="/Mapas">Mapas</Link>
+                    <Link to="/Categoria/Personajes" className='nav-link'>Personajes</Link>
+                    <Link to="/Categoria/Estructuras" className='nav-link'>Estructuras</Link>
+                    <Link to="/Categoria/Mapas" className='nav-link'>Mapas</Link>
                     <Link to="/CartWidget"> <CartWidget /> </Link>
                 </Nav>
             </Container>

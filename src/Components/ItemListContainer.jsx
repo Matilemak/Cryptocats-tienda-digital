@@ -30,7 +30,7 @@ const ItemListContainer = () => {
                 <ItemList items={items} />
             </div>
         </div>
-    )
+    );
 }
 
-export default ItemListContainer
+export default ItemListContainer;
