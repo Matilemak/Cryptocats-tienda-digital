@@ -1,18 +1,28 @@
-import React from 'react';
-import Contador from './Contador';
+import React, {useState} from 'react';
+import ItemCount from './ItemCount';
+import { link } from 'react-router-dom';
+import { userCartContext } from './CartContext';
 
 const ItemDetail = ({item}) => {
 
+    const[goToCart, setGoToCart] = useState(false);
+    const{addProduct} = useCartContext()
+    const onAdd = (quantity) =>{
+        setGoToCart(true);
+        addProduct(item, quantity);
+    }
+
     return (
         <div className='row'>
-            <img src={item.imagen} alt={item.nombre} className='item-detail-imagen' />
+            <img src={item.title} alt={item.title} className='item-detail-imagen' />
             <div className='producto'>
                 <div className='detalle-producto'>
-                    <h3>{item.nombre}</h3>
-                    <p>$ {item.precio}</p>
+                    <h3>{item.title}</h3>
+                    <p>$ {item.price}</p>
+                    <p> Cantidad: {item.stock}</p>
                 </div>
                 <div>
-                    <button className='boton-producto' onClick={() => setContador(Contador+1)}>Agregar al carrito</button>
+                    {goToCart ? <Link to='/cart'>Finalizar compra</Link> :<ItemCount stock={10} initial={1} onAdd={onAdd} />}
                 </div>
             </div>
         </div>
