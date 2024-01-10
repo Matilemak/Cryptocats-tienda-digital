@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { useCartContext } from "../Context/CartContext"
+import { useState } from 'react';
+import { useCartContext } from './CartContext';
 import {getFirestore, collection, addDoc, updateDoc, doc, getDoc} from 'firebase/firestore';
 
 export const CheckOut = () =>{
@@ -130,3 +130,5 @@ export const CheckOut = () =>{
     </div>
     );
 }
+
+export default CheckOut;

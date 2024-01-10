@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-const PersonajesId = () => {
+const MapasId = () => {
 
     const {id, name} = useParams();
 
@@ -13,4 +13,4 @@ const PersonajesId = () => {
     )
 }
 
-export default PersonajesId;
+export default MapasId;
