@@ -8,4 +8,4 @@ const Mapas = () => {
     )
 }
 
-export default Mapas
+export default Mapas;

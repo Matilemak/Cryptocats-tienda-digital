@@ -1,3 +1,4 @@
+import React from 'react';
 
 function ProductCard({img, title, price, children }) {
     return (

@@ -8,4 +8,4 @@ const Personajes = () => {
     )
 }
 
-export default Personajes
+export default Personajes;

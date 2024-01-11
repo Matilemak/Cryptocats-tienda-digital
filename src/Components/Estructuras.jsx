@@ -8,4 +8,4 @@ const Estructuras = () => {
     )
 }
 
-export default Estructuras
+export default Estructuras;

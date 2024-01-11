@@ -13,4 +13,4 @@ const LoaderComponent = () => {
         return loading ? <div> Cargando productos... </div> : null;
 }
 
-export default LoaderComponent
+export default LoaderComponent;

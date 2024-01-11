@@ -36,6 +36,13 @@
   text-decoration: none;
 }
 
+.boton-carrito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .carrito-contenedor{
   display: flex;
   flex-direction: row;
