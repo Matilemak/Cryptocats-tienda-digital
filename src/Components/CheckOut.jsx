@@ -43,10 +43,11 @@ export const CheckOut = () =>{
     telefono,
     email,
     };
+
     Promise.all(
         orden.items.map(async (productoOrden)=>{
                 const db = getFirestore();
-                const productoRef = doc(db, 'products', productoOrden.id);
+                const productoRef = doc(db, 'Productos', productoOrden.id);
 
                 const productoDoc = await getDoc(productoRef);
                 const stockActual = productoDoc.data().stock;
@@ -88,8 +89,8 @@ export const CheckOut = () =>{
         
             {cart.map((producto)=>(
                 <div key={producto.id}>
-                    <p>{''} {producto.nombre} {producto.cantidad}</p>
-                    <p>{producto.precio}</p>
+                    <p>{''} {producto.title} {producto.quantity}</p>
+                    <p>{producto.price}</p>
                 </div>
             ))}
 

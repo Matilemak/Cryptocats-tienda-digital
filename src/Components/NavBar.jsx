@@ -12,10 +12,10 @@ function NavBar() {
             <Container>
                 <Link className='logocc' to='/'> <Logo /> </Link>
                 <Nav className="nav-links">
-                    <Link to="/Categoria/Personajes" className='nav-link'>Personajes</Link>
-                    <Link to="/Categoria/Estructuras" className='nav-link'>Estructuras</Link>
-                    <Link to="/Categoria/Mapas" className='nav-link'>Mapas</Link>
-                    <Link to="/CartWidget"> <CartWidget /> </Link>
+                    <Link to="/Category/Personajes" className='nav-link'>Personajes</Link>
+                    <Link to="/Category/Estructuras" className='nav-link'>Estructuras</Link>
+                    <Link to="/Category/Mapas" className='nav-link'>Mapas</Link>
+                    <Link to="/Cart" className='navbar-cart'> <CartWidget /> </Link>
                 </Nav>
             </Container>
         </Navbar>

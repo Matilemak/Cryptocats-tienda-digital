@@ -1,5 +1,5 @@
-import React from 'react'
-import useFetchData from './useFetchData'
+import React from 'react';
+import useFetchData from './useFetchData';
 
 const DataComponent = () => {
 

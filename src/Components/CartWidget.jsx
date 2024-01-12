@@ -7,7 +7,7 @@ const CartWidget = () => {
         <div>
             <div className="carrito-contenedor">
                 <button className="boton-carrito">
-                <p className="carrito-numero">{totalProducts() || cart}</p>
+                <p className="carrito-numero">{totalProducts()}</p>
                 <i className="bi bi-bag-fill"></i>
                 </button>
             </div>

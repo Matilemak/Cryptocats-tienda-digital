@@ -8,7 +8,7 @@ import ItemDetailContainer from './Components/ItemDetailContainer';
 import Cart from './Components/Cart';
 import CartProvider from './Components/CartContext';
 
-import CartWidget from './Components/CartWidget';
+
 import Personajes from './Components/Personajes';
 import PersonajesId from './Components/PersonajesId';
 import Estructuras from './Components/Estructuras';
@@ -27,16 +27,15 @@ function App() {
           <Routes>
 
             <Route path={'/'} element={ <ItemListContainer /> } />
-            <Route path={'/categoria/:id'} element={ <ItemListContainer /> } />
+            <Route path={'/category/:id'} element={ <ItemListContainer /> } />
             <Route path={'/item/:id'} element={ <ItemDetailContainer /> } />
             <Route path={'/PersonajesId/:id/:name'} element={ <PersonajesId /> } />
-            <Route path={'/cart'} element={<Cart/>} />
-            <Route path={'/checkout'} element={<CheckOut/>} />
+            <Route path={'/cart'} element={<Cart />} />
+            <Route path={'/checkout'} element={<CheckOut />} />
             
             <Route path={'/Personajes'} element={ <Personajes /> } />
             <Route path={'/Estructuras'} element={ <Estructuras /> } />
             <Route path={'/Mapas'} element={ <Mapas /> } />
-            <Route path={'/CartWidget'} element={ <CartWidget /> } />
 
             <Route path={'*'} element={ <Error /> } />
 

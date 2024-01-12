@@ -12,6 +12,6 @@ import Items from './Items';
                 ))}
         </div>
     );
-}
+};
 
 export default ItemList;

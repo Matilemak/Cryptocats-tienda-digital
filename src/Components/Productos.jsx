@@ -1,12 +1,12 @@
 import React from 'react';
 
-const jsonProductos = ({id, imagen, nombre, precio}) => {
+const jsonProductos = ({id, img, title, price}) => {
     return (
         <div>
-            <img src={imagen} alt={nombre} />
+            <img src={img} alt={title} />
             <p>{id}</p>
-            <h3>{nombre}</h3>
-            <p>{precio}</p>
+            <h3>{title}</h3>
+            <p>{price}</p>
             <button onClick={() => setContador(Contador+1)}>Agregar al carrito</button>
         </div>
     )
