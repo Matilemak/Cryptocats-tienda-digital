@@ -2,9 +2,11 @@
 
 a {
   color: #bebebe;
+  text-decoration: none;
 }
 a:hover {
   color: #a251ffaa;
+  text-decoration: none;
 }
 
 h1 {

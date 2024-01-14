@@ -247,13 +247,191 @@
   margin-top: 60px;
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
+  font-weight: 600;
 }
 
 .ver-productos{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  color: #f3f3f3;
+  background-color: #1d1d1b;
+}
+
+/* item cart detail estilos */
+.itemCart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 2rem;
+  margin: 30px;
+}
+
+.itemCart-img{
+  width: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  border-radius: 1rem;
+}
+
+.itemCart-detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #1d1d1b;
+}
+
+.itemCart-subdetail{
+  margin-right: 30px;
+  margin-bottom: 0px;
+}
+
+.btn-eliminar{
+  width: 8rem;
+  height: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #f3f3f3;
+  background-color: #a251ff;
+}
+
+.font-bold{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  color: #a251ff;
+}
+
+.total-carrito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   color: #1d1d1b;
+}
+
+.btn-total{
+  margin: 0px;
+  width: 12rem;
+  height: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #f3f3f3;
+  background-color: #a251ff;
+}
+
+.btn-checkout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* formulario checkout estilos */
+
+.form-titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #a251ff;
+}
+
+.form-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detalleOrden-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #a251ff;
+  border-radius: 1rem;
+  padding: 5%;
+  height: 100%;
+  width: 40%;
+}
+
+.detalleOrden-titulo{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #f3f3f3;
+}
+
+.cart-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #f3f3f3;
+
+}
+
+.cartItem-checkout{
+  margin-bottom: 10px;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #f3f3f3;
+  background-color: #1d1d1b;
+  border-radius: 1rem;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.lab-check{
+  margin-right: 25px;
+}
+
+.input-check{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+}
+
+.btn-enviar{
+  margin-top: 20px;
 }

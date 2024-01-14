@@ -84,51 +84,57 @@ export const CheckOut = () =>{
 };
     return(
         <div>
-            <h2> Complete el formulario para confirmar la compra </h2>
-            <form onSubmit={manejadorFormulario}>
-        
+            <h2 className='form-titulo'> Complete el formulario para confirmar la compra.</h2>
+        <div className='form-cont'>
+            <div className='detalleOrden-cont'>
+                <h3 className='detalleOrden-titulo'>Detalle de la orden</h3>
             {cart.map((producto)=>(
-                <div key={producto.id}>
-                    <p>{''} {producto.title} {producto.quantity}</p>
-                    <p>{producto.price}</p>
+                <div className='cart-detail' key={producto.id}>
+                    <p className='cartItem-checkout'>{''} {producto.title}</p>
+                    <p className='cartItem-checkout'>Cantidad: {producto.quantity}</p>
+                    <p className='cartItem-checkout'>Precio: {producto.price}</p>
                 </div>
             ))}
-
-        <div>
-            <label className="lab-check">Nombre:</label>
-                <input className="input-check" type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/>
-        </div>
-
-        <div>
-            <label className="lab-check">Apellido:</label>
-                <input className="input-check" type="text" value={apellido} onChange={(e) => setApellido(e.target.value)}/>
-        </div>
-
-        <div>
-            <label className="lab-check">Telefono:</label>
-                <input className="input-check" type="number" value={telefono} onChange={(e) => setTelefono(e.target.value)}/>
-        </div>
-
-        <div>
-            <label className="lab-check">Email:</label>
-                <input className="input-check" type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-        </div>
-
-        <div>
-            <label className="lab-check">Confirmar email</label>
-                <input className="input-check" type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)}/>
-        </div>
-
-
-        {error && <p>{error}</p>}
-        {ordenId && (
-            <p> ¡Gracias por tu compra ! Tu numero de seguimiento es: <br/> {''} {ordenId} {''} <br/></p>
-        )}
-            <div>
-                <button type="submit"> Enviar </button>
             </div>
-        </form>
-    </div>
+
+            <form onSubmit={manejadorFormulario} className='form-container'>
+                <div className='formulario'>
+                    <div>
+                        <label className="lab-check">Nombre:</label>
+                            <input className="input-check" type="text" value={nombre} onChange={(e) => setNombre(e.target.value)}/>
+                    </div>
+                    <div>
+                        <label className="lab-check">Apellido:</label>
+                            <input className="input-check" type="text" value={apellido} onChange={(e) => setApellido(e.target.value)}/>
+                    </div>
+
+                    <div>
+                        <label className="lab-check">Telefono:</label>
+                            <input className="input-check" type="number" value={telefono} onChange={(e) => setTelefono(e.target.value)}/>
+                    </div>
+
+                    <div>
+                        <label className="lab-check">Email:</label>
+                            <input className="input-check" type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    </div>
+
+                    <div>
+                        <label className="lab-check">Confirmar email</label>
+                            <input className="input-check" type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)}/>
+                    </div>
+
+
+                    {error && <p>{error}</p>}
+                    {ordenId && (
+                        <p> ¡Gracias por tu compra ! Tu numero de seguimiento es: <br/> {''} {ordenId} {''} <br/></p>
+                        )}
+                        <div>
+                            <button type="submit" className='btn-enviar'> Enviar </button>
+                        </div>
+                </div>
+            </form>
+        </div>
+        </div>
     );
 }
 

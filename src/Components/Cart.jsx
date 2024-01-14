@@ -44,9 +44,9 @@ const Cart = () => {
         {cart.map((product) => (
             <ItemCart key={product.id} product={product} />
         ))}
-        <p>total: $ {totalPrice()}</p>
+        <p className='total-carrito'><strong>Total: $ {totalPrice()}</strong></p>
         
-        <Link to='/checkout'>
+        <Link to='/checkout' className='btn-checkout'>
             {' '}
             <button onClick={handleClick} className="btn-total">Finalizar Compra</button>
         </Link>
