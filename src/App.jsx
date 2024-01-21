@@ -7,7 +7,7 @@ import Error from './Components/Error';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import Cart from './Components/Cart';
 import CartProvider from './Components/CartContext';
-
+import Footer from './Components/Footer';
 
 import Personajes from './Components/Personajes';
 import PersonajesId from './Components/PersonajesId';
@@ -41,9 +41,11 @@ function App() {
 
           </Routes>
 
-
         </CartProvider>
+
         </BrowserRouter>
+
+        <Footer />
       </div> 
     </>
   );

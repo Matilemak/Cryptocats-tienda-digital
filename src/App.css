@@ -40,9 +40,9 @@
 /* carrito estilos */
 .boton-carrito{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 
 .carrito-contenedor{
@@ -50,9 +50,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 15px;
   margin-left: 100px;
-  margin-top: 0px;
   text-decoration: none;
 }
 
@@ -65,7 +63,10 @@
 
 .carrito-numero{
   display: flex;
-  padding-top: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 0px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
@@ -256,6 +257,7 @@
   align-items: center;
   margin-left: 40%;
   margin-right: 40%;
+  margin-bottom: 300px;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -336,7 +338,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 180px;
 }
 
 /* formulario checkout estilos */
@@ -456,4 +458,45 @@
   font-size: 24px;
   font-weight: 600;
   padding: 20px;
+}
+
+/* footer estilos */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #1d1d1b;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.div1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3f3f3;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 14px;
+}
+
+.footer-text2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3f3f3;
+  font-size: 12px;
+  margin-left: 85px;
+  line-height: 0px;
 }
