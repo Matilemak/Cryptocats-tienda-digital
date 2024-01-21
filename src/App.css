@@ -434,4 +434,26 @@
 
 .btn-enviar{
   margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.checkout-orden{
+  background-color: #a251ff;
+  color: #f3f3f3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+.orden-id{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  color: #a251ff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px;
 }
